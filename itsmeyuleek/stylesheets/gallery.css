@@ -1,5 +1,9 @@
-body {
-height: 979px;
+figure {
+  background-size: cover;
+}
+
+div.gallery {
+ flex-direction: row;
 }
 
 .gallery {
@@ -19,8 +23,8 @@ height: 979px;
 }
 
 .galleryRail figure {
-  width: 100vw;
-  min-width: 100vw;
+  width: 50vw;
+  min-width: 50vw;
 }
 
 .galleryNav {
@@ -31,15 +35,6 @@ height: 979px;
   align-items: center;
   height: calc(100% - 51px);
 }
-
-.gallery figcaption {
-  height: 51px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 14px;
-  color: rgba(0,0,0,.4);
-}
-
 
 .galleryNav div {
   position: relative;
@@ -60,7 +55,7 @@ height: 979px;
 .galleryNav div::after {
   content: "";
   position: absolute;
-  background: black;
+  background: white;
 }
 
 .galleryNav div::before {
@@ -73,8 +68,66 @@ height: 979px;
   height: 5px;
 }
 
-footer {
-  margin-left: 40px;
+
+div.small {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 800px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+figure.big {
+  width: 800px;
+  height: 800px;
+  justify-content: space-between;
+}
+
+figure.small {
+  width: 400px;
+  height: 400px;
+}
+
+.big#image1 {
+  background-image: url(../images/prague1.jpg);
+}
+
+.big#image2 {
+  background-image: url(../images/prague2.jpg);
+}
+
+.small#image1 {
+  background-image: url(../images/prague3.jpg);
+}
+
+.small#image2 {
+  background-image: url(../images/prague4.jpg);
+}
+
+.small#image3 {
+  background-image: url(../images/prague5.jpg);
+}
+
+.small#image4 {
+  background-image: url(../images/prague6.jpg);
+}
+
+@media screen and (max-width: 1460px) {
+  .body {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .allImages.first {
+    margin-left: 10px;
+  }
+  .allImages.last {
+    padding-right: 10px;
+    width: 985px;
+  }
 }
 
 #prev {
