@@ -1,103 +1,102 @@
-figure {
+div {
+  display: inline-block;
   background-size: cover;
-}
-
-div.gallery {
- flex-direction: row;
 }
 
 .gallery {
-  overflow: hidden;
-  position: relative;
-  margin: 65px;
-}
-
-.galleryRail {
-  display: flex;
-  transition: all .3s ease;
-}
-
-.galleryRail img {
-  display: block;
-  margin: 0 auto;
-}
-
-.galleryRail figure {
-  width: 90vw;
-  min-width: 45vw;
-}
-
-.galleryNav {
+  height: 100vh;
   position: absolute;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  height: calc(100% - 51px);
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.galleryNav div {
-  position: relative;
-  margin: 30px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 1;
+section.small {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.galleryNav .disabled {
-  opacity: 0;
-  cursor: default;
-}
-
-
-.galleryNav div::before,
-.galleryNav div::after {
-  content: "";
-  position: absolute;
-  background: white;
-}
-
-.galleryNav div::before {
-  width: 5px;
-  height: 20px;
-}
-
-.galleryNav div::after {
-  width: 20px;
-  height: 5px;
+div.big {
+  width: 100vh;
+  height: 100vh;
 }
 
 div.small {
+  width: 50vh;
+  height: 50vh;
+}
+
+.galleryNav {
+  position: fixed;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  width: 400px;
-  height: 800px;
-  /*padding: 0 10px 0 0;*/
+  width: 1292px;
+  align-items: center;
+  height: 100%;
 }
 
-figure.big {
-  width: 800px;
-  height: 800px;
+.galleryNav div {
+  position: relative;;
   justify-content: space-between;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  cursor: pointer;
+  z-index: 2;
 }
 
-figure.small {
-  width: 400px;
-  height: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.galleryNav .circle {
+  cursor: default;
+}
+
+.galleryNav div::before,
+.galleryNav div::after {
+  content: '';
+  background: #b7b7b7;
+  position: absolute;
+	border-radius: 50px;
+}
+
+.galleryNav div::before {
+  width: 12px;
+  height: 50px;
+  left: 30%;
+  top: 30%;
+}
+
+.galleryNav div::after {
+  width: 50px;
+  height: 12px;
+  left: 30%;
+  top: 30%;
+}
+
+.circle {
+  opacity: 0.7;
+}
+
+.circle#prev {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50px;
+}
+
+.circle#next {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50px;
 }
 
 .big#image1 {
-  background-image: url(../images/1.png);
+  background-image: url(../images/15.png);
 }
 
 .big#image2 {
-  background-image: url(../images/20.png);
+  background-image: url(../images/18.png);
 }
 
 .big#image3 {
@@ -113,7 +112,7 @@ figure.small {
 }
 
 .big#image6 {
-  background-image: url(../images/19.png);
+  background-image: url(../images/4.png);
 }
 
 .big#image7 {
@@ -125,19 +124,19 @@ figure.small {
 }
 
 .small#image1 {
-  background-image: url(../images/3.png);
+  background-image: url(../images/24.png);
 }
 
 .small#image2 {
-  background-image: url(../images/15.png);
+  background-image: url(../images/1.png);
 }
 
 .small#image3 {
-  background-image: url(../images/5.png);
+  background-image: url(../images/19.png);
 }
 
 .small#image4 {
-  background-image: url(../images/18.png);
+  background-image: url(../images/2.png);
 }
 
 .small#image5 {
@@ -161,7 +160,7 @@ figure.small {
 }
 
 .small#image10 {
-  background-image: url(../images/4.png);
+  background-image: url(../images/5.png);
 }
 
 .small#image11 {
@@ -169,7 +168,7 @@ figure.small {
 }
 
 .small#image12 {
-  background-image: url(../images/21.png);
+  background-image: url(../images/23.png);
 }
 
 .small#image13 {
@@ -181,30 +180,11 @@ figure.small {
 }
 
 .small#image15 {
-  background-image: url(../images/23.png);
+  background-image: url(../images/21.png);
 }
 
 .small#image16 {
-  background-image: url(../images/24.png);
-}
-
-
-
-
-@media screen and (max-width: 1460px) {
-  .body {
-    width: 100%
-  }
-}
-
-@media screen and (max-width: 996px) {
-  .allImages.first {
-    margin-left: 10px;
-  }
-  .allImages.last {
-    padding-right: 10px;
-    width: 985px;
-  }
+  background-image: url(../images/3.png);
 }
 
 #prev {
@@ -213,18 +193,4 @@ figure.small {
 
 #next {
   transform: rotate(135deg);
-}
-
-footer.div {
-  width: 300px;
-  height: 50px;
-  line-height: 50px;
-  font-family: 'PT Sans Caption', sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  color: black;
-  text-decoration: none;
-  background-color: rgb(102, 255, 226);
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
-  margin: 2px 0 0 300px;
 }
