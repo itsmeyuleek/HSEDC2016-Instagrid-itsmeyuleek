@@ -9,6 +9,7 @@ div.gallery {
 .gallery {
   overflow: hidden;
   position: relative;
+  margin: 65px;
 }
 
 .galleryRail {
@@ -18,13 +19,12 @@ div.gallery {
 
 .galleryRail img {
   display: block;
-  width: 1020px;
   margin: 0 auto;
 }
 
 .galleryRail figure {
-  width: 50vw;
-  min-width: 50vw;
+  width: 90vw;
+  min-width: 45vw;
 }
 
 .galleryNav {
@@ -68,51 +68,128 @@ div.gallery {
   height: 5px;
 }
 
-
 div.small {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 400px;
   height: 800px;
-  justify-content: space-between;
-  padding: 0;
+  /*padding: 0 10px 0 0;*/
 }
-
 
 figure.big {
   width: 800px;
   height: 800px;
   justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 figure.small {
   width: 400px;
   height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .big#image1 {
-  background-image: url(../images/prague1.jpg);
+  background-image: url(../images/1.png);
 }
 
 .big#image2 {
-  background-image: url(../images/prague2.jpg);
+  background-image: url(../images/20.png);
+}
+
+.big#image3 {
+  background-image: url(../images/13.png);
+}
+
+.big#image4 {
+  background-image: url(../images/14.png);
+}
+
+.big#image5 {
+  background-image: url(../images/7.png);
+}
+
+.big#image6 {
+  background-image: url(../images/19.png);
+}
+
+.big#image7 {
+  background-image: url(../images/2.png);
+}
+
+.big#image8 {
+  background-image: url(../images/8.png);
 }
 
 .small#image1 {
-  background-image: url(../images/prague3.jpg);
+  background-image: url(../images/3.png);
 }
 
 .small#image2 {
-  background-image: url(../images/prague4.jpg);
+  background-image: url(../images/15.png);
 }
 
 .small#image3 {
-  background-image: url(../images/prague5.jpg);
+  background-image: url(../images/5.png);
 }
 
 .small#image4 {
-  background-image: url(../images/prague6.jpg);
+  background-image: url(../images/18.png);
 }
+
+.small#image5 {
+  background-image: url(../images/10.png);
+}
+
+.small#image6 {
+  background-image: url(../images/11.png);
+}
+
+.small#image7 {
+  background-image: url(../images/6.png);
+}
+
+.small#image8 {
+  background-image: url(../images/12.png);
+}
+
+.small#image9 {
+  background-image: url(../images/16.png);
+}
+
+.small#image10 {
+  background-image: url(../images/4.png);
+}
+
+.small#image11 {
+  background-image: url(../images/17.png);
+}
+
+.small#image12 {
+  background-image: url(../images/21.png);
+}
+
+.small#image13 {
+  background-image: url(../images/9.png);
+}
+
+.small#image14 {
+  background-image: url(../images/22.png);
+}
+
+.small#image15 {
+  background-image: url(../images/23.png);
+}
+
+.small#image16 {
+  background-image: url(../images/24.png);
+}
+
+
+
 
 @media screen and (max-width: 1460px) {
   .body {
@@ -136,4 +213,18 @@ figure.small {
 
 #next {
   transform: rotate(135deg);
+}
+
+footer.div {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(102, 255, 226);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  margin: 2px 0 0 300px;
 }
