@@ -1,7 +1,9 @@
 .menubar {
-  height: 50px;
-  width: 100%;
+  height: 8vh;
+  width: 760vh;
   background-color: white;
+  z-index: 1;
+  position: fixed;
 }
 
 a {
@@ -19,13 +21,18 @@ a {
   position: fixed;
 }
 
-body.menubar {
+.menubar {
   top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
   min-width: 768px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.09);
+}
+
+body.menubar div {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .about {

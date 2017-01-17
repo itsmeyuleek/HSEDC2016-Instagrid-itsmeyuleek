@@ -1,9 +1,19 @@
 .gallery2 {
   position: absolute;
   padding: 20vh;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: #FAFAFA;
 }
+
+.gallery3 {
+  margin-top: 8vh;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .box {
   display: flex;
   flex-direction: row;
@@ -12,8 +22,7 @@
   align-items: center;
   transition: all .3s ease;
   box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
-
-
+  z-index: 3;
 }
 
 section.small2 {
@@ -23,7 +32,6 @@ section.small2 {
   height: 60vh;
   align-items: flex-start;
 }
-
 
 figure {
   background-size: cover;
@@ -38,21 +46,19 @@ figure.big2 {
 div.small2 {
   width: 30vh;
   height: 30vh;
-  /*padding: 1vh 1vh 1vh 1vh;*/
 }
 
 .galleryNav2 {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  width: 1292px;
+  width: 100%;
   align-items: center;
-  height: 100%;
+  height: 90%;
 }
 
 .galleryNav2 div {
-  position: relative;;
-  justify-content: space-between;
+  position: relative;
   width: 50px;
   height: 50px;
   margin: 30px;
@@ -73,23 +79,63 @@ div.small2 {
 }
 
 .galleryNav2 div::before {
-  width: 12px;
-  height: 50px;
+  width: 9px;
+  height: 37px;
   left: 30%;
   top: 30%;
 }
 
 .galleryNav2 div::after {
-  width: 50px;
-  height: 12px;
+  width: 37px;
+  height: 9px;
   left: 30%;
   top: 30%;
 }
 
-body.menubar div {
-  max-width: 1440px;
-  margin: 0 auto;
+.galleryNav3 {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  align-items: center;
+  height: 59%;
 }
+
+.galleryNav3 div {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.galleryNav3 .circle {
+  cursor: default;
+}
+
+.galleryNav3 div::before,
+.galleryNav3 div::after {
+  content: '';
+  background: #b7b7b7;
+  position: absolute;
+	border-radius: 50px;
+}
+
+.galleryNav3 div::before {
+  width: 9px;
+  height: 37px;
+  left: 30%;
+  top: 30%;
+}
+
+.galleryNav3 div::after {
+  width: 37px;
+  height: 9px;
+  left: 30%;
+  top: 30%;
+}
+
 
 footer {
   position: absolute;
@@ -104,15 +150,15 @@ footer {
 }
 
 .circle#prev {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background: white;
   border-radius: 50px;
 }
 
 .circle#next {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background: white;
   border-radius: 50px;
 }

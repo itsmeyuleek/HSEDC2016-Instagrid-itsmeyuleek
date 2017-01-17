@@ -32,14 +32,13 @@ div.small {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  width: 1292px;
+  width: 100%;
   align-items: center;
   height: 100%;
 }
 
 .galleryNav div {
-  position: relative;;
-  justify-content: space-between;
+  position: relative;
   width: 50px;
   height: 50px;
   margin: 30px;
@@ -60,15 +59,15 @@ div.small {
 }
 
 .galleryNav div::before {
-  width: 12px;
-  height: 50px;
+  width: 9px;
+  height: 37px;
   left: 30%;
   top: 30%;
 }
 
 .galleryNav div::after {
-  width: 50px;
-  height: 12px;
+  width: 37px;
+  height: 9px;
   left: 30%;
   top: 30%;
 }
