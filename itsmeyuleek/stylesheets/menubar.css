@@ -20,8 +20,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  padding: 20px;
+  height: 8vh;
+  padding: 2.9vh;
 }
 
 body.menubar div {
@@ -30,7 +30,7 @@ body.menubar div {
 }
 
 .about {
-  font-size: 20px;
+  font-size: 4vh;
   line-height: 50px;
   color: rgba(0,0,0,.2);
   transition: all .1s ease;
