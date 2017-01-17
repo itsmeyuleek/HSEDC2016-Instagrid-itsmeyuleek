@@ -2,8 +2,12 @@
   height: 8vh;
   width: 760vh;
   background-color: white;
-  z-index: 1;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  min-width: 768px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.09);
 }
 
 a {
@@ -18,16 +22,6 @@ a {
   justify-content: space-between;
   height: 50px;
   padding: 20px;
-  position: fixed;
-}
-
-.menubar {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  min-width: 768px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.09);
 }
 
 body.menubar div {
@@ -44,5 +38,5 @@ body.menubar div {
 }
 
 .about:hover {
-  color: rgba(0,0,0,.4);
+  color: rgba(0,0,0,.5);
 }
