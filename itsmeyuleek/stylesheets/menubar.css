@@ -1,36 +1,39 @@
 .menubar {
+  height: 50px;
   width: 100%;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: PT-Sans Caption, sans-serif;
 }
 
 .menubar div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 50px;
   padding: 20px;
+  position: fixed;
 }
 
-.logo {
-  display: block;
-  width: 180px;
-  height: 16px;
-  background-image: url(../images/wikimedium_logo.svg);
+body.menubar {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-width: 768px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
 }
 
 .about {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 50px;
   color: rgba(0,0,0,.2);
-  -webkit-transition: all .1s ease;
   transition: all .1s ease;
+  margin-top: -6vh;
 }
 
 .about:hover {

@@ -1,0 +1,222 @@
+.gallery2 {
+  position: absolute;
+  padding: 20vh;
+  /*overflow: hidden;*/
+  background-color: #FAFAFA;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
+
+
+}
+
+section.small2 {
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  height: 60vh;
+  align-items: flex-start;
+}
+
+
+figure {
+  background-size: cover;
+  background-position: center;
+}
+
+figure.big2 {
+  width: 60vh;
+  height: 60vh;
+}
+
+div.small2 {
+  width: 30vh;
+  height: 30vh;
+  /*padding: 1vh 1vh 1vh 1vh;*/
+}
+
+.galleryNav2 {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 1292px;
+  align-items: center;
+  height: 100%;
+}
+
+.galleryNav2 div {
+  position: relative;;
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.galleryNav2 .circle {
+  cursor: default;
+}
+
+.galleryNav2 div::before,
+.galleryNav2 div::after {
+  content: '';
+  background: #b7b7b7;
+  position: absolute;
+	border-radius: 50px;
+}
+
+.galleryNav2 div::before {
+  width: 12px;
+  height: 50px;
+  left: 30%;
+  top: 30%;
+}
+
+.galleryNav2 div::after {
+  width: 50px;
+  height: 12px;
+  left: 30%;
+  top: 30%;
+}
+
+body.menubar div {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.circle {
+  opacity: 0.7;
+}
+
+.circle#prev {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50px;
+}
+
+.circle#next {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50px;
+}
+
+#prev {
+  transform: rotate(-45deg);
+}
+
+#next {
+  transform: rotate(135deg);
+}
+
+.big2#image1 {
+  background-image: url(../images/15.png);
+}
+
+.big2#image2 {
+  background-image: url(../images/18.png);
+}
+
+.big2#image3 {
+  background-image: url(../images/13.png);
+}
+
+.big2#image4 {
+  background-image: url(../images/14.png);
+}
+
+.big2#image5 {
+  background-image: url(../images/7.png);
+}
+
+.big2#image6 {
+  background-image: url(../images/4.png);
+}
+
+.big2#image7 {
+  background-image: url(../images/2.png);
+}
+
+.big2#image8 {
+  background-image: url(../images/8.png);
+}
+
+.small2#image1 {
+  background-image: url(../images/24.png);
+}
+
+.small2#image2 {
+  background-image: url(../images/1.png);
+}
+
+.small2#image3 {
+  background-image: url(../images/19.png);
+}
+
+.small2#image4 {
+  background-image: url(../images/2.png);
+}
+
+.small2#image5 {
+  background-image: url(../images/10.png);
+}
+
+.small2#image6 {
+  background-image: url(../images/11.png);
+}
+
+.small2#image7 {
+  background-image: url(../images/6.png);
+}
+
+.small2#image8 {
+  background-image: url(../images/12.png);
+}
+
+.small2#image9 {
+  background-image: url(../images/16.png);
+}
+
+.small2#image10 {
+  background-image: url(../images/5.png);
+}
+
+.small2#image11 {
+  background-image: url(../images/17.png);
+}
+
+.small2#image12 {
+  background-image: url(../images/23.png);
+}
+
+.small2#image13 {
+  background-image: url(../images/9.png);
+}
+
+.small2#image14 {
+  background-image: url(../images/22.png);
+}
+
+.small2#image15 {
+  background-image: url(../images/21.png);
+}
+
+.small2#image16 {
+  background-image: url(../images/3.png);
+}
