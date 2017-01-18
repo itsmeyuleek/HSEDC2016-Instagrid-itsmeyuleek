@@ -13,14 +13,14 @@ div {
 
 section.small {
   width: 50vh;
-  height: 98.5vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 div.big {
   width: 100vh;
-  height: 98.5vh;
+  height: 100vh;
 }
 
 div.small {
