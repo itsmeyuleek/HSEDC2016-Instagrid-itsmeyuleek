@@ -1,28 +1,10 @@
 .gallery2 {
-  position: absolute;
-  padding: 20vh;
-  overflow: hidden;
-  background-color: #FAFAFA;
-}
-
-.gallery3 {
-  margin-top: 8vh;
-  height: 100vh;
+  height: 98.5vh;
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
-
-.box {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  align-items: center;
-  transition: all .3s ease;
-  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
-  z-index: 3;
+  background-color: #FAFAFA;
 }
 
 section.small2 {
@@ -54,7 +36,7 @@ div.small2 {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  height: 90%;
+  height: 100%;
 }
 
 .galleryNav2 div {
@@ -91,51 +73,6 @@ div.small2 {
   left: 30%;
   top: 30%;
 }
-
-.galleryNav3 {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
-  align-items: center;
-  height: 59%;
-}
-
-.galleryNav3 div {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  margin: 30px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.galleryNav3 .circle {
-  cursor: default;
-}
-
-.galleryNav3 div::before,
-.galleryNav3 div::after {
-  content: '';
-  background: #b7b7b7;
-  position: absolute;
-	border-radius: 50px;
-}
-
-.galleryNav3 div::before {
-  width: 9px;
-  height: 37px;
-  left: 30%;
-  top: 30%;
-}
-
-.galleryNav3 div::after {
-  width: 37px;
-  height: 9px;
-  left: 30%;
-  top: 30%;
-}
-
 
 footer {
   position: absolute;

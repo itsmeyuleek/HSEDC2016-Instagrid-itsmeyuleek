@@ -4,7 +4,7 @@ div {
 }
 
 .gallery {
-  height: 100vh;
+  height: 98vh;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -13,14 +13,14 @@ div {
 
 section.small {
   width: 50vh;
-  height: 100vh;
+  height: 98.5vh;
   display: flex;
   flex-direction: column;
 }
 
 div.big {
   width: 100vh;
-  height: 100vh;
+  height: 98.5vh;
 }
 
 div.small {
