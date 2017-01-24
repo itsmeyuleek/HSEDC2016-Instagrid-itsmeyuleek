@@ -1,1 +1,1 @@
-# DC-2016-Wikimedium
+# DC-2016-Instagrid
