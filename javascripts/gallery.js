@@ -1,3 +1,17 @@
+// $(function() {
+//   var state = {
+//     collections: $('.Gallery'). length,
+//     currentGallery: 0
+//   }
+//
+// $(function() {
+//   $ ('.next').first ().on ('click', function() {
+//     console.log('Clicked');
+//     $('.rail').css('transform', 'translateX(-' + state.currentGallery + '00%)');
+//   });
+// });
+
+
 $(function() {
   var state = {
     imagesQuantity: $('.galleryRail img').length,
