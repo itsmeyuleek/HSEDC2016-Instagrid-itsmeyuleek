@@ -19,7 +19,8 @@
   justify-content: space-between;
   width: 80%;
   align-items: center;
-  height: 58.5%;
+  height: 8%;
+  margin-top: 26vh;
 }
 
 .galleryNav3 div {
@@ -44,15 +45,15 @@
 }
 
 .galleryNav3 div::before {
-  width: 9px;
-  height: 37px;
+  width: 1vh;
+  height: 4.2vh;
   left: 30%;
   top: 30%;
 }
 
 .galleryNav3 div::after {
-  width: 37px;
-  height: 9px;
+  width: 4.2vh;
+  height: 1vh;
   left: 30%;
   top: 30%;
 }

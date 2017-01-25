@@ -34,7 +34,8 @@ div.small {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  height: 100%;
+  top: 45vh;
+  height: 10vh;
 }
 
 .galleryNav div {
@@ -59,15 +60,15 @@ div.small {
 }
 
 .galleryNav div::before {
-  width: 9px;
-  height: 37px;
+  width: 1vh;
+  height: 4.2vh;
   left: 30%;
   top: 30%;
 }
 
 .galleryNav div::after {
-  width: 37px;
-  height: 9px;
+  width: 4.2vh;
+  height: 1vh;
   left: 30%;
   top: 30%;
 }
@@ -76,18 +77,12 @@ div.small {
   opacity: 0.7;
 }
 
-.circle#prev {
-  width: 100px;
-  height: 100px;
-  background: white;
-  border-radius: 50px;
-}
-
+.circle#prev,
 .circle#next {
-  width: 100px;
-  height: 100px;
+  width: 7vh;
+  height: 7vh;
   background: white;
-  border-radius: 50px;
+  border-radius: 5vh;
 }
 
 .big#image1 {
